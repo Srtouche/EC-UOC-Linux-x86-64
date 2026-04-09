@@ -32,6 +32,11 @@
 - Entra a [github.com/codespaces](https://github.com/codespaces), abre tu Codespace y espera a que cargue.
 - El escritorio se iniciará solo. Abre el puerto 6080 cuando aparezca la notificación.
 
+> **Si el escritorio no arranca**, puedes iniciarlo manualmente ejecutando en la terminal del Codespace:
+> ```bash
+> startdesktop
+> ```
+
 ---
 
 ## Instalar Firefox (opcional)

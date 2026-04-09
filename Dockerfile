@@ -1,4 +1,4 @@
-FROM gitpod/workspace-full-vnc
+FROM mcr.microsoft.com/devcontainers/base:ubuntu-22.04
 
 RUN sudo apt-get update \
  && sudo DEBIAN_FRONTEND=noninteractive apt-get install -y \
@@ -28,4 +28,6 @@ RUN sudo apt-get update \
    breeze-gtk-theme \
    breeze-icon-theme \
  && sudo rm -rf /var/lib/apt/lists/*
- 
+
+RUN echo "alias startdesktop='/usr/local/share/desktop-init.sh'" >> /home/gitpod/.bashrc
+

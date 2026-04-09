@@ -1,6 +1,9 @@
 {
   "build": { "dockerfile": "Dockerfile" },
   "runArgs": ["--shm-size=512m"],
+  "features": {
+    "ghcr.io/devcontainers/features/desktop-lite:1": {}
+  },
   "postCreateCommand": "cd '/workspaces/EC-UOC-Linux-x86-64/Entorno de trabajo' && bash install-EC.sh",
   "portsAttributes": {
     "6080": {
