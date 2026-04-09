@@ -4,7 +4,7 @@
     {
       "label": "Iniciar escritorio Linux",
       "type": "shell",
-      "command": "rm -f /tmp/.X*-lock /tmp/.X11-unix/X* && sleep 5 && /usr/local/share/desktop-init.sh; tail -f /dev/null",
+      "command": "bash /workspaces/EC-UOC-Linux-x86-64/start-desktop.sh; tail -f /dev/null",
       "runOptions": {
         "runOn": "folderOpen"
       },

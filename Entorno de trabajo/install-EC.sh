@@ -1,4 +1,6 @@
 
+trap 'touch /workspaces/EC-UOC-Linux-x86-64/.ec-install-done' EXIT
+
 echo "---------------------------------"
 echo "-   Config kdbg                 -"
 echo "---------------------------------"
@@ -138,14 +140,7 @@ echo "---------------------------------"
 echo "-   Acceso directo Practicas    -"
 echo "---------------------------------"
 ln -sfn /workspaces/EC-UOC-Linux-x86-64 $HOME/Practicas-EC
-
-##Autostart file manager on desktop showing the workspace
-mkdir -p $HOME/.config/autostart
-echo "[Desktop Entry]
-Type=Application
-Name=Abrir Practicas EC
-Exec=thunar /workspaces/EC-UOC-Linux-x86-64
-Hidden=false
-X-GNOME-Autostart-enabled=true" > $HOME/.config/autostart/open-practicas.desktop
 echo "Ok"
+
+touch /workspaces/EC-UOC-Linux-x86-64/.ec-install-done
 

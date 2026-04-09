@@ -1,0 +1,12 @@
+[begin] (Menú)
+  [exec] (Terminal) {tilix}
+  [exec] (Explorador de archivos) {nautilus /workspaces/EC-UOC-Linux-x86-64}
+  [separator]
+  [exec] (Geany) {geany}
+  [exec] (KDbg) {kdbg}
+  [exec] (Guía del entorno) {evince '/workspaces/EC-UOC-Linux-x86-64/Entorno de trabajo/Entorno_trabajo.pdf'}
+  [exec] (Gestor de tareas) {lxtask}
+  [separator]
+  [restart] (Reiniciar escritorio)
+  [exit] (Salir)
+[end]
