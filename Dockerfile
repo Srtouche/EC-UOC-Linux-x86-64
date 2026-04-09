@@ -47,4 +47,4 @@ COPY .devcontainer/start-desktop.sh /usr/local/bin/start-desktop.sh
 RUN chmod +x /home/vscode/.fluxbox/startup /usr/local/bin/start-desktop.sh \
  && chown vscode:vscode /home/vscode/.fluxbox/startup /home/vscode/.fluxbox/menu /home/vscode/.fluxbox/init
 
-RUN echo "alias startdesktop='start-desktop.sh'" >> /home/vscode/.b
+RUN echo "alias startdesktop='start-desktop.sh'" >> /home/vscode/.bashrc
