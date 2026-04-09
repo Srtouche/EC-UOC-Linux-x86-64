@@ -2,11 +2,12 @@
   "build": { "dockerfile": "Dockerfile" },
   "runArgs": ["--shm-size=512m"],
   "features": {
-    "ghcr.io/devcontainers/features/desktop-lite:1": {
-      "noVncVersion": "1.4.0"
-    }
+    "ghcr.io/devcontainers/features/desktop-lite:1": {}
   },
-  "postCreateCommand": "cd '/workspaces/EC-UOC-Linux-x86-64/Entorno de trabajo' && bash install-EC.sh",
+  "containerEnv": {
+    "WORKSPACE": "${containerWorkspaceFolder}"
+  },
+  "postCreateCommand": "cd \"$WORKSPACE/Entorno de trabajo\" && bash install-EC.sh",
   "portsAttributes": {
     "6080": {
       "label": "Escritorio Linux",

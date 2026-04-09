@@ -1,5 +1,5 @@
 
-trap 'touch /workspaces/EC-UOC-Linux-x86-64/.ec-install-done' EXIT
+trap 'touch "$WORKSPACE/.ec-install-done"' EXIT
 
 echo "---------------------------------"
 echo "-   Config kdbg                 -"
@@ -139,8 +139,6 @@ echo "Ok"
 echo "---------------------------------"
 echo "-   Acceso directo Practicas    -"
 echo "---------------------------------"
-ln -sfn /workspaces/EC-UOC-Linux-x86-64 $HOME/Practicas-EC
+ln -sfn "$WORKSPACE" $HOME/Practicas-EC
 echo "Ok"
-
-touch /workspaces/EC-UOC-Linux-x86-64/.ec-install-done
 

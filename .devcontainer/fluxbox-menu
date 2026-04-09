@@ -1,10 +1,10 @@
 [begin] (Menú)
   [exec] (Terminal) {tilix}
-  [exec] (Explorador de archivos) {nautilus /workspaces/EC-UOC-Linux-x86-64}
+  [exec] (Explorador de archivos) {bash -c 'nautilus "$WORKSPACE"'}
   [separator]
   [exec] (Geany) {geany}
   [exec] (KDbg) {kdbg}
-  [exec] (Guía del entorno) {evince '/workspaces/EC-UOC-Linux-x86-64/Entorno de trabajo/Entorno_trabajo.pdf'}
+  [exec] (Guía del entorno) {bash -c 'evince "$WORKSPACE/Entorno de trabajo/Entorno_trabajo.pdf"'}
   [exec] (Gestor de tareas) {lxtask}
   [separator]
   [restart] (Reiniciar escritorio)

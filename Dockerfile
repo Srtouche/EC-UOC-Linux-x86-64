@@ -43,8 +43,8 @@ RUN sudo apt-get update \
 COPY .devcontainer/fluxbox-startup /home/vscode/.fluxbox/startup
 COPY .devcontainer/fluxbox-menu /home/vscode/.fluxbox/menu
 COPY .devcontainer/fluxbox-init /home/vscode/.fluxbox/init
-RUN chmod +x /home/vscode/.fluxbox/startup \
+COPY .devcontainer/start-desktop.sh /usr/local/bin/start-desktop.sh
+RUN chmod +x /home/vscode/.fluxbox/startup /usr/local/bin/start-desktop.sh \
  && chown vscode:vscode /home/vscode/.fluxbox/startup /home/vscode/.fluxbox/menu /home/vscode/.fluxbox/init
 
-RUN echo "alias startdesktop='bash /workspaces/EC-UOC-Linux-x86-64/start-desktop.sh'" >> /home/vscode/.bashrc
-
+RUN echo "alias startdesktop='start-desktop.sh'" >> /home/vscode/.b

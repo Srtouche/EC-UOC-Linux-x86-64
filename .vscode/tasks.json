@@ -4,7 +4,7 @@
     {
       "label": "Iniciar escritorio Linux",
       "type": "shell",
-      "command": "bash /workspaces/EC-UOC-Linux-x86-64/start-desktop.sh; tail -f /dev/null",
+      "command": "start-desktop.sh; tail -f /dev/null",
       "runOptions": {
         "runOn": "folderOpen"
       },

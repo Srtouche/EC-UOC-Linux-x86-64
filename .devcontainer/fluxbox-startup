@@ -1,4 +1,4 @@
 #!/bin/bash
 tilix &
-nautilus /workspaces/EC-UOC-Linux-x86-64 &
+nautilus "$WORKSPACE" &
 exec fluxbox
